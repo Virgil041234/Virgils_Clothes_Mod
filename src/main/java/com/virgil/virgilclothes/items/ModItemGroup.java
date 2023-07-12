@@ -8,7 +8,7 @@ public class ModItemGroup {
     public static final ItemGroup CLOTHES_GROUP = new ItemGroup("virgilClothesTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModItems.TEST.get());
+            return new ItemStack(ModItems.BLACK_SHIRT_RIGHT.get());
         }
     };
 

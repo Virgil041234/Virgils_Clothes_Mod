@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "virgilclothes:test"
+    "virgilclothes:black_shirt_right",
+    "virgilclothes:black_shirt_left"
   ]
 }

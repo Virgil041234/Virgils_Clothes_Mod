@@ -31,15 +31,13 @@ import java.util.UUID;
 
 public class Clothes extends Item {
 
-
-ResourceLocation RL = new ResourceLocation(VirgilClothes.MOD_ID, "textures/entity/default.png");
+    ResourceLocation CLOTHES_TEXTURE;
 
     public Clothes(ResourceLocation RL) {
         super(new Item.Properties().group(ModItemGroup.CLOTHES_GROUP).maxStackSize(1));
-        this.RL = RL;
+        CLOTHES_TEXTURE = RL;
     }
 
-    private final ResourceLocation CLOTHES_TEXTURE = RL;
 
         @Override
         public ICapabilityProvider initCapabilities(ItemStack stack, CompoundNBT unused) {
