@@ -32,21 +32,14 @@ import java.util.UUID;
 public class Clothes extends Item {
 
 
-    String ResourceLoc = "textures/entity/default.png";
+ResourceLocation RL = new ResourceLocation(VirgilClothes.MOD_ID, "textures/entity/default.png");
 
-    public Clothes(String location, String file) {
+    public Clothes(ResourceLocation RL) {
         super(new Item.Properties().group(ModItemGroup.CLOTHES_GROUP).maxStackSize(1));
-        ResourceLoc = "textures/entity/" + location + file + ".png";
+        this.RL = RL;
     }
 
-    public Clothes(String file) {
-        super(new Item.Properties().group(ModItemGroup.CLOTHES_GROUP).maxStackSize(1));
-        ResourceLoc = "textures/entity/" + file + ".png";
-        VirgilClothes.LOGGER.info(ResourceLoc);
-    }
-
-    private final ResourceLocation CLOTHES_TEXTURE = new ResourceLocation(VirgilClothes.MOD_ID,
-            ResourceLoc);
+    private final ResourceLocation CLOTHES_TEXTURE = RL;
 
         @Override
         public ICapabilityProvider initCapabilities(ItemStack stack, CompoundNBT unused) {
@@ -79,7 +72,6 @@ public class Clothes extends Item {
                     clothes
                             .render(matrixStack, vertexBuilder, light, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F,
                                     1.0F);
-                    VirgilClothes.LOGGER.info("Render" + ResourceLoc);
                 }
             });
         }

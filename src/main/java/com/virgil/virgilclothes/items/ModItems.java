@@ -3,6 +3,7 @@ package com.virgil.virgilclothes.items;
 import com.virgil.virgilclothes.VirgilClothes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,7 +15,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, VirgilClothes.MOD_ID);
 
     public static final RegistryObject<Item> TEST = ITEMS.register("test",
-            () -> new Clothes("test"));
+            () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/test.png")));
 
 
     public static void register(IEventBus eventBus) {
