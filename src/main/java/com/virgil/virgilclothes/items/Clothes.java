@@ -31,12 +31,22 @@ import java.util.UUID;
 
 public class Clothes extends Item {
 
-    public Clothes() {
+
+    String ResourceLoc = "textures/entity/default.png";
+
+    public Clothes(String location, String file) {
         super(new Item.Properties().group(ModItemGroup.CLOTHES_GROUP).maxStackSize(1));
+        ResourceLoc = "textures/entity/" + location + file + ".png";
     }
 
-    private static final ResourceLocation CLOTHES_TEXTURE = new ResourceLocation(VirgilClothes.MOD_ID,
-            "textures/entity/test.png");
+    public Clothes(String file) {
+        super(new Item.Properties().group(ModItemGroup.CLOTHES_GROUP).maxStackSize(1));
+        ResourceLoc = "textures/entity/" + file + ".png";
+        VirgilClothes.LOGGER.info(ResourceLoc);
+    }
+
+    private final ResourceLocation CLOTHES_TEXTURE = new ResourceLocation(VirgilClothes.MOD_ID,
+            ResourceLoc);
 
         @Override
         public ICapabilityProvider initCapabilities(ItemStack stack, CompoundNBT unused) {
@@ -54,6 +64,7 @@ public class Clothes extends Item {
                                    float limbSwing, float limbSwingAmount, float partialTicks,
                                    float ageInTicks, float netHeadYaw, float headPitch) {
 
+
                     if (!(this.model instanceof ClothesModel)) {
                         this.model = new ClothesModel();
                     }
@@ -68,6 +79,7 @@ public class Clothes extends Item {
                     clothes
                             .render(matrixStack, vertexBuilder, light, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F,
                                     1.0F);
+                    VirgilClothes.LOGGER.info("Render" + ResourceLoc);
                 }
             });
         }

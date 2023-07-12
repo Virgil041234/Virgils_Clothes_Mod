@@ -14,7 +14,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, VirgilClothes.MOD_ID);
 
     public static final RegistryObject<Item> TEST = ITEMS.register("test",
-            () -> new Clothes());
+            () -> new Clothes("test"));
 
 
     public static void register(IEventBus eventBus) {

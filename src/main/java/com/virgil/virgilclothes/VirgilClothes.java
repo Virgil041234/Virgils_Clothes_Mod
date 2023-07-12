@@ -1,5 +1,6 @@
 package com.virgil.virgilclothes;
 
+import com.virgil.virgilclothes.client.render.model.ClothesModel;
 import com.virgil.virgilclothes.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -30,7 +31,7 @@ public class VirgilClothes
     public static final String MOD_ID = "virgilclothes";
 
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public VirgilClothes() {
         // Register the setup method for modloading
