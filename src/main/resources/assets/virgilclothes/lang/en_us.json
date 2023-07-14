@@ -1,8 +1,61 @@
 {
-  "item.virgilclothes.black_shirt_right": "Black Shirt Right",
+  "item.virgilclothes.black_belt_flat": "Black Belt",
+  "item.virgilclothes.black_belt_left": "Black Belt Left",
+  "item.virgilclothes.black_belt_left2": "Black Belt Left Long",
+  "item.virgilclothes.black_belt_right": "Black Belt Right",
+  "item.virgilclothes.black_belt_right2": "Black Belt Right Long",
+  "item.virgilclothes.black_belt_sash1": "Black Belt Sash(Black)",
+  "item.virgilclothes.black_belt_sash2": "Black Belt Sash(Color)",
+
+  "item.virgilclothes.black_center_ext": "Black Shirt Extension Center",
+  "item.virgilclothes.black_center_ext2": "Black Shirt Extension Center Joined",
+  "item.virgilclothes.black_left_ext": "Black Shirt Extension Left",
+  "item.virgilclothes.black_left_ext2": "Black Shirt Extension Left Long",
+  "item.virgilclothes.black_right_ext": "Black Shirt Extension Right",
+  "item.virgilclothes.black_right_ext2": "Black Shirt Extension Right Long",
+
+  "item.virgilclothes.black_glove": "Black Glove",
+  "item.virgilclothes.black_glove2": "Black Glove Fingerless",
+  "item.virgilclothes.black_wrap": "Black Wrap",
+  "item.virgilclothes.black_wrap2": "Black Wrap Fingerless",
+
+  "item.virgilclothes.black_shirt_center": "Black Shirt Center",
+  "item.virgilclothes.black_shirt_cut": "Black Shirt Cut",
   "item.virgilclothes.black_shirt_left": "Black Shirt Left",
+  "item.virgilclothes.black_shirt_right": "Black Shirt Right",
+
+  "item.virgilclothes.black_trim_center": "Black Trim Center",
+  "item.virgilclothes.black_trim_center2": "Black Trim Center Wide",
+  "item.virgilclothes.black_trim_left": "Black Trim Left",
+  "item.virgilclothes.black_trim_left2": "Black Trim Left Wide",
+  "item.virgilclothes.black_trim_right": "Black Trim Right",
+  "item.virgilclothes.black_trim_right2": "Black Right Wide",
+
+  "item.virgilclothes.black_arm": "Black Arms",
+  "item.virgilclothes.black_bandana": "Black Bandana",
+  "item.virgilclothes.black_bandana2": "Black Bandana Tied",
+  "item.virgilclothes.black_bandana3": "Black Bandana Neck",
+  "item.virgilclothes.black_boots": "Black Boots",
+  "item.virgilclothes.black_bracelet": "Black Bracklet",
+  "item.virgilclothes.black_haori": "Black Haori",
+  "item.virgilclothes.black_haorihalf": "Black Haori Split",
+  "item.virgilclothes.black_haoritrim": "Black Haori Trim",
+  "item.virgilclothes.black_mask": "Black Mask",
+  "item.virgilclothes.black_pants": "Black Pants",
+  "item.virgilclothes.black_sashext": "Black Sash Extension",
+  "item.virgilclothes.black_sashleft": "Black Sash Left",
+  "item.virgilclothes.black_sashright": "Black Sash Right",
+  "item.virgilclothes.black_shoes": "Black Shoes",
+  "item.virgilclothes.black_shoes2": "Black Shoes and Socks",
+  "item.virgilclothes.black_shoulder": "Black Shoulder Covers",
+  "item.virgilclothes.black_sock": "Black Ankle Socks",
 
   "itemGroup.virgilClothesTab": "Virgil's Clothes",
 
-  "curios.identifier.shirt": "Shirt"
+  "curios.identifier.belts": "Belt",
+  "curios.identifier.ext": "Extension",
+  "curios.identifier.glove": "Glove",
+  "curios.identifier.shirt": "Shirt",
+  "curios.identifier.trim": "Shirt Trim",
+  "curios.identifier.misc": "Misc"
 }

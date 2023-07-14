@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "virgilclothes:item/black/right"
+    "layer0": "virgilclothes:item/black/belt"
   }
 }

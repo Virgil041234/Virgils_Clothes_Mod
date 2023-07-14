@@ -6,17 +6,15 @@ package com.virgil.virgilclothes.client.render.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import javax.annotation.Nonnull;
-
-import com.virgil.virgilclothes.VirgilClothes;
-import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.model.PlayerModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.LivingEntity;
 
-public class ClothesModel extends PlayerModel<LivingEntity> {
+import javax.annotation.Nonnull;
 
-	public ClothesModel() {
+public class HaoriModel extends PlayerModel<LivingEntity> {
+
+	public HaoriModel() {
 		super(1.0F, false);
 		this.textureWidth = 64;
 		this.textureHeight = 64;

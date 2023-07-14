@@ -32,6 +32,7 @@ public class VirgilClothes
 
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
+    public static int miscSize = 1;
 
     public VirgilClothes() {
         // Register the setup method for modloading
@@ -65,7 +66,17 @@ public class VirgilClothes
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
         InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE,
+                () -> new SlotTypeMessage.Builder("belts").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE,
+                () -> new SlotTypeMessage.Builder("ext").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE,
+                () -> new SlotTypeMessage.Builder("glove").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE,
                 () -> new SlotTypeMessage.Builder("shirt").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE,
+                () -> new SlotTypeMessage.Builder("trim").build());
+        InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE,
+                () -> new SlotTypeMessage.Builder("misc").build());
     }
 
     private void processIMC(final InterModProcessEvent event)

@@ -14,6 +14,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, VirgilClothes.MOD_ID);
 
+    //-----BLACK-----
+
+    //Belt
     public static final RegistryObject<Item> BLACK_BELT_FLAT = ITEMS.register("black_belt_flat",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/belt/flat.png")));
     public static final RegistryObject<Item> BLACK_BELT_LEFT = ITEMS.register("black_belt_left",
@@ -28,6 +31,8 @@ public class ModItems {
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/belt/sash1.png")));
     public static final RegistryObject<Item> BLACK_BELT_SASH2 = ITEMS.register("black_belt_sash2",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/belt/sash2.png")));
+
+    //Extension
     public static final RegistryObject<Item> BLACK_CENTER_EXT = ITEMS.register("black_center_ext",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/ext/centerext.png")));
     public static final RegistryObject<Item> BLACK_CENTER_EXT2 = ITEMS.register("black_center_ext2",
@@ -40,6 +45,8 @@ public class ModItems {
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/ext/rightext.png")));
     public static final RegistryObject<Item> BLACK_RIGHT_EXT2 = ITEMS.register("black_right_ext2",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/ext/rightext2.png")));
+
+    //Glove
     public static final RegistryObject<Item> BLACK_GLOVE = ITEMS.register("black_glove",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/glove/glove.png")));
     public static final RegistryObject<Item> BLACK_GLOVE2 = ITEMS.register("black_glove2",
@@ -48,6 +55,8 @@ public class ModItems {
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/glove/wrap.png")));
     public static final RegistryObject<Item> BLACK_WRAP2 = ITEMS.register("black_wrap2",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/glove/wrapfingerless.png")));
+
+    //Shirt
     public static final RegistryObject<Item> BLACK_SHIRT_CENTER = ITEMS.register("black_shirt_center",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/shirt/center.png")));
     public static final RegistryObject<Item> BLACK_SHIRT_CUT = ITEMS.register("black_shirt_cut",
@@ -56,6 +65,8 @@ public class ModItems {
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/shirt/left.png")));
     public static final RegistryObject<Item> BLACK_SHIRT_RIGHT = ITEMS.register("black_shirt_right",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/shirt/right.png")));
+
+    //Trim
     public static final RegistryObject<Item> BLACK_TRIM_CENTER = ITEMS.register("black_trim_center",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/trim/center.png")));
     public static final RegistryObject<Item> BLACK_TRIM_CENTER2 = ITEMS.register("black_trim_center2",
@@ -68,6 +79,8 @@ public class ModItems {
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/trim/right.png")));
     public static final RegistryObject<Item> BLACK_TRIM_RIGHT2 = ITEMS.register("black_trim_right2",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/trim/right2.png")));
+
+    //Misc
     public static final RegistryObject<Item> BLACK_ARM = ITEMS.register("black_arm",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/arm.png")));
     public static final RegistryObject<Item> BLACK_BANDANA = ITEMS.register("black_bandana",
@@ -81,7 +94,7 @@ public class ModItems {
     public static final RegistryObject<Item> BLACK_BRACELET = ITEMS.register("black_bracelet",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/bracelet.png")));
     public static final RegistryObject<Item> BLACK_HAORI = ITEMS.register("black_haori",
-            () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/haori.png")));
+            () -> new Haori(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/haori.png")));
     public static final RegistryObject<Item> BLACK_HAORIHALF = ITEMS.register("black_haorihalf",
             () -> new Clothes(new ResourceLocation(VirgilClothes.MOD_ID,"textures/entity/black/haorihalf.png")));
     public static final RegistryObject<Item> BLACK_HAORITRIM = ITEMS.register("black_haoritrim",
