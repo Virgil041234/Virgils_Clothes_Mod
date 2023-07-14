@@ -32,7 +32,6 @@ public class VirgilClothes
 
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
-    public static int miscSize = 1;
 
     public VirgilClothes() {
         // Register the setup method for modloading
