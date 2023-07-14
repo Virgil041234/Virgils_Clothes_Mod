@@ -28,12 +28,6 @@ public class Haori extends Item implements ICurioItem {
     ResourceLocation HAORI_TEXTURE;
     private Object model;
 
-    public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid) {
-        Multimap<Attribute, AttributeModifier> misc = LinkedHashMultimap.create();
-        CuriosApi.getCuriosHelper().addSlotModifier(misc, "misc", uuid, 1.0, AttributeModifier.Operation.ADDITION);
-        return misc;
-    }
-
     public Haori(ResourceLocation RL) {
         super(new Properties().group(ModItemGroup.CLOTHES_GROUP).maxStackSize(1));
         HAORI_TEXTURE = RL;
@@ -41,6 +35,7 @@ public class Haori extends Item implements ICurioItem {
 
     @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
+        CuriosApi.getCuriosHelper().addSlotModifier(stack,"misc","misc",UUID,1,AttributeModifier.Operation.ADDITION,"misc");
         ICurioItem.super.onEquip(slotContext, prevStack, stack);
     }
 
