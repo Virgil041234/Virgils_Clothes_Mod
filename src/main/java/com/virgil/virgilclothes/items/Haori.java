@@ -41,7 +41,6 @@ public class Haori extends Item implements ICurioItem {
 
     @Override
     public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-
         ICurioItem.super.onEquip(slotContext, prevStack, stack);
     }
 
